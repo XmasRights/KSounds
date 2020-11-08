@@ -13,6 +13,8 @@
 		4B14EC3B25536E2A00F6D1E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B14EC3A25536E2A00F6D1E7 /* Preview Assets.xcassets */; };
 		4B14EC4425536E8E00F6D1E7 /* SpeakButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14EC4325536E8E00F6D1E7 /* SpeakButton.swift */; };
 		4B14EC4B255371E300F6D1E7 /* SoundBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14EC4A255371E300F6D1E7 /* SoundBoard.swift */; };
+		4B879B4E25587AA400520C81 /* Consonant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B879B4D25587AA400520C81 /* Consonant.swift */; };
+		4B879B5125587DD300520C81 /* Consonant+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B879B5025587DD300520C81 /* Consonant+Definitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4B14EC3C25536E2A00F6D1E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B14EC4325536E8E00F6D1E7 /* SpeakButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakButton.swift; sourceTree = "<group>"; };
 		4B14EC4A255371E300F6D1E7 /* SoundBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoard.swift; sourceTree = "<group>"; };
+		4B879B4D25587AA400520C81 /* Consonant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consonant.swift; sourceTree = "<group>"; };
+		4B879B5025587DD300520C81 /* Consonant+Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Consonant+Definitions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		4B14EC3225536E2900F6D1E7 /* KSound */ = {
 			isa = PBXGroup;
 			children = (
+				4B879B4C25587A6100520C81 /* Data */,
 				4B14EC3325536E2900F6D1E7 /* KSoundApp.swift */,
 				4B14EC3525536E2900F6D1E7 /* ContentView.swift */,
 				4B14EC3725536E2A00F6D1E7 /* Assets.xcassets */,
@@ -73,6 +78,15 @@
 				4B14EC3A25536E2A00F6D1E7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B879B4C25587A6100520C81 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4B879B4D25587AA400520C81 /* Consonant.swift */,
+				4B879B5025587DD300520C81 /* Consonant+Definitions.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +160,9 @@
 			files = (
 				4B14EC4B255371E300F6D1E7 /* SoundBoard.swift in Sources */,
 				4B14EC4425536E8E00F6D1E7 /* SpeakButton.swift in Sources */,
+				4B879B5125587DD300520C81 /* Consonant+Definitions.swift in Sources */,
 				4B14EC3625536E2900F6D1E7 /* ContentView.swift in Sources */,
+				4B879B4E25587AA400520C81 /* Consonant.swift in Sources */,
 				4B14EC3425536E2900F6D1E7 /* KSoundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
