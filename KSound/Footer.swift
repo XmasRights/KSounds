@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct Footer: View {
-    let consonant = Consonoant.all
+    @Binding var selected: Consonoant
+
+    private let consonants = Array(Consonoant.all.reversed())
 
     var body: some View {
         VStack {
@@ -16,11 +18,13 @@ struct Footer: View {
 
             HStack {
                 Menu {
-                    ForEach(consonant) {
-                        Text(String($0.character))
+                    Picker("Selected Consonant", selection: $selected) {
+                        ForEach(consonants) {
+                            Text($0.title).tag($0)
+                        }
                     }
                 } label: {
-                    Label("Filter", systemImage: "line.horizontal.3.decrease.circle.fill")
+                    Label("Consonant", systemImage: "line.horizontal.3.decrease.circle.fill")
                 }
 
                 Spacer()
@@ -31,13 +35,15 @@ struct Footer: View {
 }
 
 struct Footer_Previews: PreviewProvider {
+    @State static var selected = Consonoant.all.first!
+
     static var previews: some View {
         Group {
-            Footer()
+            Footer(selected: $selected)
                 .preferredColorScheme(.light)
                 .previewLayout(.sizeThatFits)
 
-            Footer()
+            Footer(selected: $selected)
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
         }

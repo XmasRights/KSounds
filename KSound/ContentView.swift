@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selected: Consonoant = Consonoant.all.first!
+
     var body: some View {
         VStack {
             Spacer()
-            SoundBoard(root: "ㄱ")
+            SoundBoard(consonant: selected)
             Spacer()
-            Footer()
+            Footer(selected: $selected)
         }
     }
 }

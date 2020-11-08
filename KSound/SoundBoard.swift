@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct SoundBoard: View {
-    let root: String
-    let vowels: [String] = ["ㅏ", "ㅑ", "ㅓ", "ㅕ", "ㅗ", "ㅛ", "ㅜ", "ㅠ", "ㅡ", "ㅣ"]
+    let consonant: Consonoant
 
     var body: some View {
         verticalView
     }
 
     private var characters: [String] {
-        vowels.map { "\(root)\($0)" }
+        consonant.basicVowels.map(String.init)
     }
 
     private let columns: [GridItem] = [
@@ -25,7 +24,7 @@ struct SoundBoard: View {
 
     private var verticalView: some View {
         VStack {
-            Text(root)
+            Text(consonant.title)
                 .font(.largeTitle)
 
             LazyVGrid(columns: columns, spacing: 12) {
@@ -41,19 +40,19 @@ struct SoundBoard: View {
 struct SoundBoard_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            SoundBoard(root: "ㄱ")
+            SoundBoard(consonant: Consonoant.all.first!)
                 .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
                 .previewLayout(.fixed(width: 320, height: 480))
 
-            SoundBoard(root: "ㄱ")
+            SoundBoard(consonant: Consonoant.all.first!)
                 .preferredColorScheme(.light)
                 .previewLayout(.fixed(width: 320, height: 480))
 
-            SoundBoard(root: "ㄱ")
+            SoundBoard(consonant: Consonoant.all.first!)
                 .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
                 .previewLayout(.fixed(width: 480, height: 320))
 
-            SoundBoard(root: "ㄱ")
+            SoundBoard(consonant: Consonoant.all.first!)
                 .preferredColorScheme(.light)
                 .previewLayout(.fixed(width: 480, height: 320))
         }
