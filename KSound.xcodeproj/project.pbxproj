@@ -15,6 +15,7 @@
 		4B14EC4B255371E300F6D1E7 /* SoundBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14EC4A255371E300F6D1E7 /* SoundBoard.swift */; };
 		4B879B4E25587AA400520C81 /* Consonant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B879B4D25587AA400520C81 /* Consonant.swift */; };
 		4B879B5125587DD300520C81 /* Consonant+Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B879B5025587DD300520C81 /* Consonant+Definitions.swift */; };
+		4B879B5825587EFD00520C81 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B879B5725587EFD00520C81 /* Footer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4B14EC4A255371E300F6D1E7 /* SoundBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBoard.swift; sourceTree = "<group>"; };
 		4B879B4D25587AA400520C81 /* Consonant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consonant.swift; sourceTree = "<group>"; };
 		4B879B5025587DD300520C81 /* Consonant+Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Consonant+Definitions.swift"; sourceTree = "<group>"; };
+		4B879B5725587EFD00520C81 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				4B14EC3925536E2A00F6D1E7 /* Preview Content */,
 				4B14EC4325536E8E00F6D1E7 /* SpeakButton.swift */,
 				4B14EC4A255371E300F6D1E7 /* SoundBoard.swift */,
+				4B879B5725587EFD00520C81 /* Footer.swift */,
 			);
 			path = KSound;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				4B14EC4425536E8E00F6D1E7 /* SpeakButton.swift in Sources */,
 				4B879B5125587DD300520C81 /* Consonant+Definitions.swift in Sources */,
 				4B14EC3625536E2900F6D1E7 /* ContentView.swift in Sources */,
+				4B879B5825587EFD00520C81 /* Footer.swift in Sources */,
 				4B879B4E25587AA400520C81 /* Consonant.swift in Sources */,
 				4B14EC3425536E2900F6D1E7 /* KSoundApp.swift in Sources */,
 			);

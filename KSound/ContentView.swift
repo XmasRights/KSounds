@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        SoundBoard(root: "ㄱ")
+        VStack {
+            Spacer()
+            SoundBoard(root: "ㄱ")
+            Spacer()
+            Footer()
+        }
     }
 }
 

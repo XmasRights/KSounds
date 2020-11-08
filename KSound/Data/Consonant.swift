@@ -13,7 +13,9 @@ enum ConsonantStyle {
     case tensed
 }
 
-struct Consonoant {
+struct Consonoant: Identifiable {
+    var id: Character { character }
+
     let character: Character
     let style: ConsonantStyle
 }
